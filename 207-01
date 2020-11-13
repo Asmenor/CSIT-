@@ -1,12 +1,1 @@
-<?php
-$handler = fopen(“characters.xml”, ‘x+’);
-
-$MyArray = array( array1( "name" => "Peter Parker", "email" => "peterparker@mail.com", ), 
-                   array2( "name" => "Clark Kent", "email" => "clarkkent@mail.com", ), 
-                   array3( "name" => "Harry Potter", "email" => "harrypotter@mail.com", ),
-                   array4("name" => "Hilmi Deniz Biliciler", "email" => "bili5785@fredonia.edu", );
-                 
-fwrite($MyArray);
-fclose($handler);
-
-?>
+mvp
