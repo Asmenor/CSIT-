@@ -1,0 +1,19 @@
+<?php
+$MyFirstVariable = 'Hilmi';
+$s1 =  "My first variable was named \$MyFirstVariable." . "<br />";
+$s2 = "The value of my variable was $MyFirstVariable." . "<br />";
+
+// I don't know why but \n is not working for me but "<br />" is...
+echo "$s1,  $s2";
+    
+$empty = array();
+$MyName = array('Hilmi', 'Biliciler', 'Fall 2020');
+$fill = array_fill(1, 50, 'apple');
+
+$Answer2 = strlen($s1);
+$Answer3 = strlen($s2);
+
+echo "The sum of counts from answer2 and answer3 are: ";
+echo $Answer2 + $Answer3
+
+?>
