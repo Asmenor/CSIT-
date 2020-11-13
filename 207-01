@@ -1,19 +1,12 @@
 <?php
-$MyFirstVariable = 'Hilmi';
-$s1 =  "My first variable was named \$MyFirstVariable." . "<br />";
-$s2 = "The value of my variable was $MyFirstVariable." . "<br />";
+$handler = fopen(“characters.xml”, ‘x+’);
 
-// I don't know why but \n is not working for me but "<br />" is...
-echo "$s1,  $s2";
-    
-$empty = array();
-$MyName = array('Hilmi', 'Biliciler', 'Fall 2020');
-$fill = array_fill(1, 50, 'apple');
-
-$Answer2 = strlen($s1);
-$Answer3 = strlen($s2);
-
-echo "The sum of counts from answer2 and answer3 are: ";
-echo $Answer2 + $Answer3
+$MyArray = array( array1( "name" => "Peter Parker", "email" => "peterparker@mail.com", ), 
+                   array2( "name" => "Clark Kent", "email" => "clarkkent@mail.com", ), 
+                   array3( "name" => "Harry Potter", "email" => "harrypotter@mail.com", ),
+                   array4("name" => "Hilmi Deniz Biliciler", "email" => "bili5785@fredonia.edu", );
+                 
+fwrite($MyArray);
+fclose($handler);
 
 ?>
